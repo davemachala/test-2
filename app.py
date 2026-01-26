@@ -9,7 +9,7 @@ app = Flask(__name__)
 # --- NASTAVENÍ ---
 TRIP_ID_LIKE = "-CZTRAINT-IC-521" 
 CILOVA_STANICE_ID = "-SR70ST-333120" 
-NAZEV_CILE = "Červenka"
+NAZEV_CILE = ""
 
 ZNAME_STANICE = {
     "-SR70ST-333120": "Červenka",
@@ -97,7 +97,7 @@ HTML = """
             <p>{{ data.error }}</p>
         {% else %}
             <h1>🚄 {{ data.nazev }}</h1>
-            <div class="label">Předpokládaný příjezd</div>
+            <div class="label">Přijedu asi v:</div>
             <div class="big-time">{{ data.ocekavany_prijezd }}</div>
             <div class="label">{{ data.cilova_stanice }}</div>
             <div>
