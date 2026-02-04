@@ -7,8 +7,10 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 # --- NASTAVENÍ ---
-TRIP_ID_LIKE = "-CZTRAINT-EC-221" 
-CILOVA_STANICE_ID = "-SR70ST-333120" 
+# Olomouc -SR70ST-343624
+# Červenka -SR70ST-333120
+TRIP_ID_LIKE = "-CZTRAINT-SC-507" 
+CILOVA_STANICE_ID = "-SR70ST-343624" 
 NAZEV_CILE = ""
 
 ZNAME_STANICE = {
