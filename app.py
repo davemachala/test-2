@@ -12,7 +12,7 @@ TRIP_ID_LIKE = "-CZTRAINT-EC-223"
 CILOVA_STANICE_ID = "-SR70ST-333120" # Červenka
 START_STANICE_NAZEV = "Praha hl.n."  # Výchozí stanice pro 0 % na progress baru
 SOUBOR_DATA = "data.csv"
-DOBA_JIZDY_Z_UNICOVA = 30 # minut
+DOBA_JIZDY_Z_UNICOVA = 10 # minut
 
 # Globální proměnné
 STANICE_DB = {} # { "343624": {"nazev": "Olomouc", "lat":..., "lon":...} }
