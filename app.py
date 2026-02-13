@@ -154,7 +154,8 @@ def ziskej_data_jrutil():
                         info['cas_odjezdu_auta'] = dt_odjezd_auta.strftime("%H:%M")
                         
                         # Odpočet
-                        now = datetime.now() + timedelta(hours=1)
+                        nowbase = datetime.now()
+                        now = nowbase + timedelta(hours=1)
                         info['minuty_do_startu'] = int((dt_odjezd_auta - now).total_seconds() / 60)
                         
                     except Exception as e:
