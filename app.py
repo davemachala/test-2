@@ -12,7 +12,7 @@ TRIP_ID_LIKE = "-CZTRAINT-EC-221"
 CILOVA_STANICE_ID = "-SR70ST-333120" # Červenka
 START_STANICE_NAZEV = "Praha hl.n."  # Výchozí stanice pro 0 % na progress baru
 SOUBOR_DATA = "data.csv"
-DOBA_JIZDY_Z_UNICOVA = 7 # minut
+DOBA_JIZDY_Z_UNICOVA = 8 # minut
 
 # Globální proměnné
 STANICE_DB = {} # { "343624": {"nazev": "Olomouc", "lat":..., "lon":...} }
@@ -206,7 +206,7 @@ HTML = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kde je vlak?</title>
+    <title>Kdy budu na nádru?</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; text-align: center; background: #eef2f3; color: #333; padding: 10px; }
         .card { background: white; max-width: 450px; margin: 10px auto; padding: 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
@@ -249,7 +249,7 @@ HTML = """
             <h1 style="color:#c0392b">⚠️ Chyba dat</h1>
             <p>{{ data.error }}</p>
         {% else %}
-            <h1>🚄 Valašský Expres EC 221</h1>
+            <h1>🚄 Valašský Expres 221</h1>
             
             <div class="progress-wrapper">
                 <div class="progress-labels">
