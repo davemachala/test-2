@@ -12,7 +12,7 @@ TRIP_ID_LIKE = "-CZTRAINT-EC-221"
 CILOVA_STANICE_ID = "-SR70ST-333120" # Červenka
 START_STANICE_NAZEV = "Praha hl.n."  # Výchozí stanice pro 0 % na progress baru
 SOUBOR_DATA = "data.csv"
-DOBA_JIZDY_Z_UNICOVA = 8 # minut
+DOBA_JIZDY_Z_UNICOVA = 5 # minut
 
 # Globální proměnné
 STANICE_DB = {} # { "343624": {"nazev": "Olomouc", "lat":..., "lon":...} }
@@ -154,7 +154,7 @@ def ziskej_data_jrutil():
                         info['cas_odjezdu_auta'] = dt_odjezd_auta.strftime("%H:%M")
                         
                         # Odpočet
-                        now = datetime.now()
+                        now = datetime.now() + timedelta(hours=1)
                         info['minuty_do_startu'] = int((dt_odjezd_auta - now).total_seconds() / 60)
                         
                     except Exception as e:
