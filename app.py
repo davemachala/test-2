@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 # --- NASTAVENÍ ---
-TRIP_ID_LIKE = "-CZTRAINT-EC-223" 
+TRIP_ID_LIKE = "-CZTRAINT-EC-221" 
 CILOVA_STANICE_ID = "-SR70ST-333120" # Červenka
 START_STANICE_NAZEV = "Praha hl.n."  # Výchozí stanice pro 0 % na progress baru
 SOUBOR_DATA = "data.csv"
