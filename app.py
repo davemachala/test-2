@@ -12,7 +12,7 @@ TRIP_ID_LIKE = "-CZTRAINT-EC-221"
 CILOVA_STANICE_ID = "-SR70ST-333120" # Červenka
 START_STANICE_NAZEV = "Praha hl.n."  # Výchozí stanice pro 0 % na progress baru
 SOUBOR_DATA = "data.csv"
-DOBA_JIZDY_Z_UNICOVA = 5 # minut
+DOBA_JIZDY_Z_UNICOVA = 7 # minut
 
 # Globální proměnné
 STANICE_DB = {} # { "343624": {"nazev": "Olomouc", "lat":..., "lon":...} }
@@ -249,13 +249,13 @@ HTML = """
             <h1 style="color:#c0392b">⚠️ Chyba dat</h1>
             <p>{{ data.error }}</p>
         {% else %}
-            <h1>🚄 EC 221</h1>
+            <h1>🚄 Valašský Expres EC 221</h1>
             
             <div class="progress-wrapper">
                 <div class="progress-labels">
-                    <span>Praha</span>
+                    <span>Praha hl.n.</span>
                     <span>{{ data.progress_percent }} %</span>
-                    <span>Olomouc</span>
+                    <span>Červenka</span>
                 </div>
                 <div class="progress-container">
                     <div class="progress-bar" style="width: {{ data.progress_percent }}%;"></div>
