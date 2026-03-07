@@ -8,15 +8,15 @@ from datetime import datetime, timedelta
 app = Flask(__name__)
 
 # --- NASTAVENÍ ---
-TRIP_ID_LIKE = "-CZTRAINT-EC-221" 
+TRIP_ID_LIKE = "-CZTRAINT-EN-443" 
 CILOVA_STANICE_ID = "-SR70ST-333120" # Červenka
 START_STANICE_NAZEV = "Praha hl.n."  # Výchozí stanice pro 0 % na progress baru
 SOUBOR_DATA = "data.csv"
-DOBA_JIZDY_Z_UNICOVA = 8 # minut
+DOBA_JIZDY_Z_UNICOVA = 28 # minut
 
 # Globální proměnné
 STANICE_DB = {} # { "343624": {"nazev": "Olomouc", "lat":..., "lon":...} }
-NAZEV_CILE = "Červenka" 
+NAZEV_CILE = "Olomouc hl.n." 
 START_STANICE_ID = None # Najdeme automaticky podle názvu
 
 def nacti_stanice_z_csv():
