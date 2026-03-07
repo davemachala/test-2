@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # --- NASTAVENÍ ---
 TRIP_ID_LIKE = "-CZTRAINT-EN-443" 
-CILOVA_STANICE_ID = "-SR70ST-333120" # Červenka
+CILOVA_STANICE_ID = "-SR70ST-343624" # Červenka
 START_STANICE_NAZEV = "Praha hl.n."  # Výchozí stanice pro 0 % na progress baru
 SOUBOR_DATA = "data.csv"
 DOBA_JIZDY_Z_UNICOVA = 28 # minut
