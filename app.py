@@ -249,13 +249,13 @@ HTML = """
             <h1 style="color:#c0392b">⚠️ Chyba dat</h1>
             <p>{{ data.error }}</p>
         {% else %}
-            <h1>🚄 Valašský Expres 221</h1>
+            <h1>🚄 ČD EuroNight 433</h1>
             
             <div class="progress-wrapper">
                 <div class="progress-labels">
                     <span>Praha hl.n.</span>
                     <span>{{ data.progress_percent }} %</span>
-                    <span>Červenka</span>
+                    <span>Olomouc</span>
                 </div>
                 <div class="progress-container">
                     <div class="progress-bar" style="width: {{ data.progress_percent }}%;"></div>
